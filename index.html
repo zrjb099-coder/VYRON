@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VYRON // Rocket League</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="bg-shade"></div>
+<div class="grid"></div>
+
+<!-- NAVBAR -->
+<header class="nav">
+
+  <a href="#home" class="brand">
+
+    <div class="brand-img">
+      <img src="assets/vyron-logo.jpg" alt="VYRON">
+    </div>
+
+    <div>
+      <b>VYRON</b>
+      <span>ROCKET LEAGUE</span>
+    </div>
+
+  </a>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#match">NEXT MATCH</a>
+    <a href="#roster">ROSTER</a>
+    <a href="#stats">STATS</a>
+    <a href="#media">MEDIA</a>
+  </nav>
+
+  <div class="nav-right">
+
+    <button id="themeBtn">☼</button>
+
+    <a href="#socials" class="nav-join">
+      JOIN US
+    </a>
+
+  </div>
+
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="#home">HOME</a>
+  <a href="#match">NEXT MATCH</a>
+  <a href="#roster">ROSTER</a>
+  <a href="#stats">STATS</a>
+  <a href="#media">MEDIA</a>
+  <a href="#socials">SOCIALS</a>
+
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-copy">
+
+    <div class="status">
+      <i></i>
+      VYRON ONLINE
+    </div>
+
+    <div class="hero-kicker">
+      ROCKET LEAGUE / ESPORTS CLAN
+    </div>
+
+    <h1>
+      PLAY<br>
+      <span>WITHOUT</span><br>
+      LIMITS.
+    </h1>
+
+    <p>
+      Speed. Precision. Teamwork.
+      VYRON is built to compete,
+      improve and dominate every lobby.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="#match" class="btn-primary">
+        VIEW NEXT MATCH
+        <strong>↗</strong>
+      </a>
+
+      <a href="#roster" class="btn-outline">
+        MEET THE SQUAD
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+    <div class="ring ring-one"></div>
+    <div class="ring ring-two"></div>
+
+    <div class="hero-logo">
+      <img src="assets/vyron-logo.jpg" alt="VYRON">
+    </div>
+
+    <div class="floating-tag tag-top">
+      <small>CLAN STATUS</small>
+      <b>ACTIVE</b>
+    </div>
+
+    <div class="floating-tag tag-bottom">
+      <small>CURRENT FORM</small>
+      <b>W W W L W</b>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NEXT MATCH -->
+<section class="match-section" id="match">
+
+  <div class="section-top">
+
+    <div>
+      <small>NEXT BATTLE</small>
+      <h2>READY <span>UP.</span></h2>
+    </div>
+
+    <div class="live-line">
+      <i></i>
+      UPCOMING MATCH
+    </div>
+
+  </div>
+
+
+  <div class="next-match">
+
+    <div class="match-left">
+
+      <div class="competition">
+        ROCKET LEAGUE
+        <span>3V3</span>
+      </div>
+
+      <div class="versus">
+
+        <div class="team home-team">
+
+          <img
+            src="assets/vyron-logo.jpg"
+            alt="VYRON"
+          >
+
+          <div>
+            <small>HOME</small>
+            <strong>VYRON</strong>
+          </div>
+
+        </div>
+
+
+        <div class="vs">
+
+          <b>VS</b>
+
+          <span>COMING SOON</span>
+
+        </div>
+
+
+        <div class="team">
+
+          <img
+           class="opponent-logo"
+           src="assets/opponent.png"
+           alt="Opponent"
+          >
+
+
+          <div>
+            <small>OPPONENT</small>
+            <strong>RANDOM</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="match-right">
+
+      <small>MATCH STARTS IN</small>
+
+      <div class="countdown">
+
+        <div>
+          <b id="days">00</b>
+          <span>DAYS</span>
+        </div>
+
+        <div>
+          <b id="hours">00</b>
+          <span>HRS</span>
+        </div>
+
+        <div>
+          <b id="minutes">00</b>
+          <span>MIN</span>
+        </div>
+
+        <div>
+          <b id="seconds">00</b>
+          <span>SEC</span>
+        </div>
+
+      </div>
+
+      <div class="match-meta">
+
+        <span>MODE <b>3V3</b></span>
+        <span>SERVER <b>EU</b></span>
+        <span>STATUS <b>READY</b></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- QUICK NUMBERS -->
+<section class="numbers">
+
+  <div class="number-card large">
+
+    <small>VYRON RECORD</small>
+
+    <div>
+      <strong>75</strong>
+      <span>%</span>
+    </div>
+
+    <p>WIN RATE</p>
+
+  </div>
+
+
+  <div class="number-card">
+
+    <small>MATCHES</small>
+    <strong>24</strong>
+    <p>PLAYED</p>
+
+  </div>
+
+
+  <div class="number-card">
+
+    <small>WINS</small>
+    <strong>18</strong>
+    <p>VICTORIES</p>
+
+  </div>
+
+
+  <div class="number-card">
+
+    <small>GOALS</small>
+    <strong>137</strong>
+    <p>TOTAL</p>
+
+  </div>
+
+
+  <div class="number-card accent">
+
+    <small>STREAK</small>
+    <strong>05</strong>
+    <p>WINS</p>
+
+  </div>
+
+</section>
+
+
+<!-- ROSTER -->
+<section class="section" id="roster">
+
+  <div class="section-title">
+
+    <div>
+      <small>THE PLAYERS</small>
+      <h2>VYRON <span>ROSTER</span></h2>
+    </div>
+
+    <p>
+      SIX PLAYERS.<br>
+      ONE MINDSET.
+    </p>
+
+  </div>
+
+
+  <div class="roster">
+
+    <article class="player">
+
+      <div class="player-number">01</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>ZIAD</h3>
+
+        <div class="rank">
+          <span>PLATINUM</span>
+          <b>●</b>
+        </div>
+      </div>
+
+      <div class="player-phone">
+        01152406496
+      </div>
+
+    </article>
+
+
+    <article class="player">
+
+      <div class="player-number">02</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>FATHY</h3>
+
+        <div class="rank">
+          <span>PLATINUM</span>
+          <b>●</b>
+        </div>
+      </div>
+
+      <div class="player-phone">
+        971542501159
+      </div>
+
+    </article>
+
+
+    <article class="player">
+
+      <div class="player-number">03</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>YASSIN</h3>
+
+        <div class="rank">
+          <span>PLATINUM</span>
+          <b>●</b>
+        </div>
+      </div>
+
+      <div class="player-phone">
+        01002388263
+      </div>
+
+    </article>
+
+
+    <article class="player diamond">
+
+      <div class="player-number">04</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>MOSTAFA</h3>
+
+        <div class="rank">
+          <span>DIAMOND</span>
+          <b>◆</b>
+        </div>
+      </div>
+
+      <div class="player-phone">
+        01125176774
+      </div>
+
+    </article>
+
+
+    <article class="player">
+
+      <div class="player-number">05</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>OMAR SAYED</h3>
+
+        <div class="rank">
+          <span>PLATINUM</span>
+          <b>●</b>
+        </div>
+      </div>
+
+      <div class="player-phone empty">
+        NUMBER TBA
+      </div>
+
+    </article>
+
+
+    <article class="player">
+
+      <div class="player-number">06</div>
+
+      <div class="player-pic">
+        <img src="assets/vyron-logo.jpg">
+      </div>
+
+      <div class="player-info">
+        <small>PLAYER</small>
+        <h3>OMAR</h3>
+
+        <div class="rank">
+          <span>PLATINUM</span>
+          <b>●</b>
+        </div>
+      </div>
+
+      <div class="player-phone empty">
+        NUMBER TBA
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- DETAILED STATS -->
+<section class="stats-section" id="stats">
+
+  <div class="section-title">
+
+    <div>
+      <small>PERFORMANCE DATA</small>
+      <h2>CLAN <span>STATS</span></h2>
+    </div>
+
+  </div>
+
+
+  <div class="stats-layout">
+
+    <div class="stats-main">
+
+      <div class="stat-big">
+
+        <small>WIN RATE</small>
+
+        <strong>75<span>%</span></strong>
+
+        <div class="progress">
+          <i style="width:75%"></i>
+        </div>
+
+        <p>18 wins from 24 matches</p>
+
+      </div>
+
+
+      <div class="stat-list">
+
+        <div>
+          <span>GOALS</span>
+          <b>137</b>
+        </div>
+
+        <div>
+          <span>ASSISTS</span>
+          <b>82</b>
+        </div>
+
+        <div>
+          <span>SAVES</span>
+          <b>196</b>
+        </div>
+
+        <div>
+          <span>SHOTS</span>
+          <b>321</b>
+        </div>
+
+        <div>
+          <span>MVP</span>
+          <b>11</b>
+        </div>
+
+        <div>
+          <span>CLEAN SHEETS</span>
+          <b>07</b>
+        </div>
+
+        <div>
+          <span>GOAL DIFFERENCE</span>
+          <b>+43</b>
+        </div>
+
+        <div>
+          <span>BEST STREAK</span>
+          <b>05</b>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="performance">
+
+      <small>SEASON FORM</small>
+
+      <div class="form">
+        <b>W</b>
+        <b>W</b>
+        <b>W</b>
+        <b class="loss">L</b>
+        <b>W</b>
+      </div>
+
+      <div class="performance-bottom">
+
+        <span>LAST 5</span>
+
+        <strong>4 — 1</strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MATCH HISTORY -->
+<section class="section">
+
+  <div class="section-title">
+
+    <div>
+      <small>COMPETITIVE HISTORY</small>
+      <h2>RECENT <span>RESULTS</span></h2>
+    </div>
+
+  </div>
+
+
+  <div class="results">
+
+    <div class="result result-head">
+      <span>OPPONENT</span>
+      <span>MODE</span>
+      <span>SCORE</span>
+      <span>RESULT</span>
+      <span>DATE</span>
+    </div>
+
+    <div class="result">
+      <strong>TEAM ALPHA</strong>
+      <span>3V3</span>
+      <b>4 — 2</b>
+      <em>WIN</em>
+      <span>RECENT</span>
+    </div>
+
+    <div class="result">
+      <strong>TEAM NOVA</strong>
+      <span>3V3</span>
+      <b>3 — 1</b>
+      <em>WIN</em>
+      <span>RECENT</span>
+    </div>
+
+    <div class="result">
+      <strong>TEAM X</strong>
+      <span>2V2</span>
+      <b>1 — 3</b>
+      <em class="red">LOSS</em>
+      <span>RECENT</span>
+    </div>
+
+    <div class="result">
+      <strong>TEAM ZERO</strong>
+      <span>3V3</span>
+      <b>5 — 2</b>
+      <em>WIN</em>
+      <span>RECENT</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MEDIA -->
+<section class="section media-section" id="media">
+
+  <div class="section-title">
+
+    <div>
+      <small>VYRON CONTENT</small>
+      <h2>MEDIA <span>ZONE</span></h2>
+    </div>
+
+  </div>
+
+
+  <div class="media">
+
+    <div class="media-card screenshots">
+
+      <div class="media-number">01</div>
+
+      <div>
+        <span>MEDIA</span>
+        <h3>SCREENSHOTS</h3>
+        <p>Match results & victories.</p>
+      </div>
+
+      <b>↗</b>
+
+    </div>
+
+
+    <div class="media-card videos">
+
+      <div class="media-number">02</div>
+
+      <div>
+        <span>MEDIA</span>
+        <h3>MATCH VIDEOS</h3>
+        <p>Full games and competitive moments.</p>
+      </div>
+
+      <b>↗</b>
+
+    </div>
+
+
+    <div class="media-card highlights">
+
+      <div class="media-number">03</div>
+
+      <div>
+        <span>FEATURED</span>
+        <h3>HIGHLIGHTS</h3>
+        <p>Goals, saves & insane plays.</p>
+      </div>
+
+      <b>↗</b>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SOCIALS -->
+<section class="socials" id="socials">
+
+  <div class="social-inner">
+
+    <small>STAY CONNECTED</small>
+
+    <h2>
+      FIND <span>VYRON.</span>
+    </h2>
+
+    <p>
+      Follow the clan, watch our matches
+      and join the community.
+    </p>
+
+
+    <div class="social-links">
+
+      <a
+        href="https://www.tiktok.com/@vyron_r.1"
+        target="_blank"
+      >
+        <span>TT</span>
+        <div>
+          <small>TIKTOK</small>
+          <b>@vyron_r.1</b>
+        </div>
+        <strong>↗</strong>
+      </a>
+
+
+      <a
+        href="https://chat.whatsapp.com/EzDDPSgzF7kC0jeRQLmpSb"
+        target="_blank"
+      >
+        <span>WA</span>
+        <div>
+          <small>WHATSAPP</small>
+          <b>VYRON COMMUNITY</b>
+        </div>
+        <strong>↗</strong>
+      </a>
+
+
+      <a href="#" id="discord">
+        <span>DS</span>
+        <div>
+          <small>DISCORD</small>
+          <b>LINK COMING SOON</b>
+        </div>
+        <strong>→</strong>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-brand">
+
+    <img src="assets/vyron-logo.jpg">
+
+    <div>
+      <b>VYRON</b>
+      <small>ROCKET LEAGUE CLAN</small>
+    </div>
+
+  </div>
+
+  <span>
+    BUILT TO COMPETE.
+  </span>
+
+  <span>
+    © 2026 VYRON
+  </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
